@@ -5,37 +5,57 @@ body {
     padding: 0;
 }
 
-.sidebar {
-    width: 200px;
+
+.navbar {
+    width: 100%;
     background: #004449;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    padding-top: 30px;
+    z-index: 10;
 }
 
-.sidebar ul {
+.navbar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-.sidebar ul li a {
-    display: block;
-    padding: 12px 20px;
+.navbar ul li a {
     text-decoration: none;
     color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
     transition: 0.3s;
+    font-size: 14px;
 }
 
-.sidebar ul li a:hover {
+.navbar ul li a:hover {
     background: #006f75;
 }
 
+
 .container {
-    margin-left: 220px;
-    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 90px 20px 20px; 
 }
 
 .header {
@@ -43,7 +63,13 @@ body {
 }
 
 .header h1 {
-    margin: 10px 0;
+    margin: 10px 0 5px;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 3px 0;
+    color: #555;
 }
 
 .foto-profil {
@@ -51,29 +77,58 @@ body {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 20px 0 10px;
+    border: 3px solid #004449;
 }
 
+
+.content {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    scroll-margin-top: 90px; 
+}
+
+
+section h2 {
+    margin-top: 0;
+    color: #004449;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
 .footer {
-    margin-left: 220px;
     background: #004449;
     color: white;
     text-align: center;
     padding: 15px 0;
+    margin-top: 20px;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .sidebar {
-        display: none;
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .container {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    .footer {
-        margin-left: 0;
+        padding: 110px 15px 15px;
     }
 
     .foto-profil {

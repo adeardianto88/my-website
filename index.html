@@ -1,56 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>portofolio</title>
+    <meta charset="utf-8">
+    <title>Portofolio Ade Ardianto</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-    <script>
+<script>
     alert("Selamat datang di portofolio Ade Ardianto!");
 </script>
 
-    <div class="container">
-        <div class="header">
-            <h1>Portofolio ade ardianto</h1>
-            <p>Mahasiswa Universitas Pamulang</p>
-            <p>Full Stack Developer</p>
-            <img src="foto/IMG_20251126_191928.jpg" alt="Foto Profil" class="foto-profil">
-            <p>Mahasiswa biasa yang sedang mengejar cita cita nya menjadi profesional programmer</p>
-        </div>
-
-        <div class="content">
-            <h2>Tentang Saya</h2>
-            <p>halo nama saya ade ardianto, saya mahasiswa Universitas Pamulang dengan jurusan teknik informatika, 
-                saat ini saya sudah semester 5 dan akan mulai masuk ke semester 6, di semester ini saya banyak mendapatkan 
-                pelajaran yang berharga di mata kuliah pemrograman web 1, dari basic html, css, javascript, bootstrap, debugger, api, dan masih 
-                banyak lagi. 
-            </p>
-
-            <h2>Project saya</h2>
-            <ul>
-                <li>tracking kesehatan</li>
-                <li>"e-Karang" - Sistem Pendakian Digital Gunung Karang </li>
-                <li>Informasi Brand AQUA</li>
-                <li>aplikasi pembelajaran untuk menjadi profesional full stack developer</li>
-            </ul>
-        </div>
-
-        <div class="sidebar">
-             <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang Saya</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Kontak</a></li>
-                <li><a href="#">Project saya</a></li>
-            </ul>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2025 Dibuat oleh Ade ardianto</p>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">Ade Ardianto</div>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
     </div>
+</nav>
+
+<div class="container">
+
+    <!-- HEADER / BERANDA -->
+    <div class="header" id="beranda">
+        <h1>Portofolio Ade Ardianto</h1>
+        <p>Mahasiswa Universitas Pamulang</p>
+        <p>Calon Full Stack Developer</p>
+        <img src="foto/IMG_20251126_191928.jpg" alt="Foto Profil" class="foto-profil">
+        <p>Mahasiswa biasa yang sedang mengejar cita-citanya menjadi profesional programmer.</p>
+    </div>
+
+    <div class="content">
+
+        <!-- TENTANG SAYA -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo, nama saya <strong>Ade Ardianto</strong>, saya mahasiswa Universitas Pamulang
+                jurusan Teknik Informatika. Saat ini saya berada di semester 5 dan akan
+                memasuki semester 6.
+            </p>
+            <p>
+                Di mata kuliah Pemrograman Web 1, saya belajar banyak hal mulai dari
+                dasar HTML, CSS, JavaScript, Bootstrap, debugging, penggunaan API,
+                dan masih banyak lagi. Saya tertarik untuk menjadi <em>Full Stack Developer</em>
+                yang mampu mengerjakan sisi front-end maupun back-end.
+            </p>
+        </section>
+
+        <!-- HOBI -->
+        <section id="hobi">
+            <h2>Hobi</h2>
+            <ul>
+                <li>Menonton streamer jelool di youtube</li>
+                <li>olahraga</li>
+                <li>Bermain game</li>
+                <li>Mendengarkan musik</li>
+            </ul>
+        </section>
+
+        <!-- KEAHLIAN -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>mampu membuat web statis</li>
+                <li>Bisa memanfaatkan ai untuk problem solving</li>
+                <li>Dasar-dasar debugging di browser</li>
+                <li>Kerja sama tim dan komunikasi</li>
+            </ul>
+        </section>
+
+        <!-- PROJECT -->
+        <section id="project">
+            <h2>Project Saya</h2>
+            <ul>
+                <li>Aplikasi tracking kesehatan sederhana</li>
+                <li>"e-Karang" - Sistem Pendakian Digital Gunung Karang</li>
+                <li>Website Informasi Brand AQUA</li>
+                <li>Aplikasi pembelajaran untuk menjadi profesional full stack developer</li>
+            </ul>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Silakan hubungi saya melalui:</p>
+            <ul>
+                <li>Email: <a href="mailto:adeardianto61@gmail.com">adeardianto61@gmail.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/ade.ardianto" target="_blank">@adeardianto.61</a></li>
+                <li>GitHub: <a href="https://github.com/adeardianto88" target="_blank">github.com/adeardianto88</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Dibuat oleh Ade Ardianto</p>
+    </div>
+</div>
 
 </body>
 </html>
